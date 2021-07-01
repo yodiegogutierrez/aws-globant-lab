@@ -18,6 +18,10 @@
 		<java.version>15</java.version>
 		<lombok.version>1.18.20</lombok.version>
 		<jackson.version>2.12.3</jackson.version>
+		<aws-sdk.version>2.16.87</aws-sdk.version>
+		<aws-sns-sdk.version>2.16.92</aws-sns-sdk.version>
+		<aws-sqs-sdk.version>2.16.92</aws-sqs-sdk.version>
+		<aws-s3-sdk.version>2.16.92</aws-s3-sdk.version>
 	</properties>
 
 	<dependencies>
@@ -25,7 +29,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -42,6 +45,21 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sns</artifactId>
+			<version>${aws-sns-sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sqs</artifactId>
+			<version>${aws-sqs-sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>s3</artifactId>
+			<version>${aws-s3-sdk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
